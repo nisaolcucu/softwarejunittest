@@ -8,7 +8,7 @@ public class ValidatorTest {
     @Test
     public void testValidName() {
         assertTrue(Validator.isValidName("Nisa"));
-        assertTrue(Validator.isValidName("nisa"));// with lowerletter
+        assertFalse(Validator.isValidName("nisa"));// with lowerletter
         assertFalse(Validator.isValidName("N"));    // single letter
         assertFalse(Validator.isValidName("Nisa123")); // includes number
         assertFalse(Validator.isValidName(null));   // null
