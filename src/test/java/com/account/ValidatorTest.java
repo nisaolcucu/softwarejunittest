@@ -20,7 +20,7 @@ public class ValidatorTest {
         assertFalse(Validator.isValidEmail("test.com"));   // @ missing
         assertFalse(Validator.isValidEmail("test@.com"));  // domain fault
         assertFalse(Validator.isValidEmail(""));           // empty
-        assertFalse(Validator.isValidEmail(null));         // null
+        assertFalse(Validator.isValidEmail(null));        // nnull
     }
 
     @Test
